@@ -1,0 +1,20 @@
+{
+  "name": "devburger",
+  "version": "1.0.0",
+  "description": "Protótipo de cardápio virtual",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wt-journey-backend-01/wt-journey-backend-01-etapa-1-afernandesabreu.git"
+  },
+  "author": "Alexandre Fernandes Abreu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wt-journey-backend-01/wt-journey-backend-01-etapa-1-afernandesabreu/issues"
+  },
+  "homepage": "https://github.com/wt-journey-backend-01/wt-journey-backend-01-etapa-1-afernandesabreu#readme"
+}
