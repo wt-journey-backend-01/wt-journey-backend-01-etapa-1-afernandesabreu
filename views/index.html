@@ -7,5 +7,13 @@
     </head>
     <body>
         <h1>Bem-vindos ao DevBurger</h1>
+        <p>Gostaríamos muito de ouvir sua sugestão!</p>
+        <form action = "/sugestao" method="get">
+            <label for="nome">Nome: </label><br>
+            <input type="text" name="nome" id="nome"><br>
+            <label for="ingredientes">Ingredientes:</label><br>
+            <textarea name="ingredientes" id="ingredientes" placeholder="Conte pra gente um sabor novo de lanche que gostaria que oferecêssemos para você."></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
     </body>
 </html>
