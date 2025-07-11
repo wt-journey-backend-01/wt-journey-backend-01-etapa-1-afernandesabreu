@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
+app.get('/contato', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'contato.html'));
+});
+
 app.get('/sugestao', (req, res) => {
   const {nome, ingredientes } = req.query
   return res.send(
