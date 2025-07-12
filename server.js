@@ -8,17 +8,22 @@ let contatoCadastrado = null;
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/api/lanches', (req, res) => {
+  const filePath = path.join(__dirname, 'public', 'data', 'lanches.json');
+  return res.status(200).sendFile(filePath);
+});
+
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'index.html'));
+  res.status(200).sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
 app.get('/contato', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'contato.html'));
+  res.status(200).sendFile(path.join(__dirname, 'views', 'contato.html'));
 });
 
 app.post('/contato', (req, res) => {
   contatoCadastrado = req.body;
-  res.redirect('/contato-recebido');
+  res.status(200).redirect('/contato-recebido');
 });
 
 app.get('/contato-recebido', (req, res) => {
@@ -55,7 +60,7 @@ app.get('/contato-recebido', (req, res) => {
 
 app.get('/sugestao', (req, res) => {
   const {nome, ingredientes } = req.query
-  return res.send(
+  return res.status(200).send(
     `
     <!DOCTYPE html>
     <html lang="pt-br">
