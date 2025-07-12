@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 
 const port = 3000;
+let contatoCadastrado = null;
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
