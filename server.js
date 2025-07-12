@@ -31,7 +31,7 @@ app.get('/contato-recebido', (req, res) => {
     return res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
   } else {
     const { nome, email, assunto, mensagem } = contatoCadastrado;
-    return res..status(200).send(
+    return res.status(200).send(
     `
     <!DOCTYPE html>
     <html lang="pt-br">
