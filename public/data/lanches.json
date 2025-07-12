@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "nome": "BitBurger Escovado",
+    "ingredientes": "Pão brioche, Hambúrguer de 200g, Cheddar duplo, Bacon artesanal, Alface roxa, Maionese de alho"
+  },
+  {
+    "id": 2,
+    "nome": "Bugfix Bacon Supreme",
+    "ingredientes": "Pão australiano, Hambúrguer de 180g, Queijo prato, Bacon defumado, Cebola crispy, Molho chipotle"
+  },
+  {
+    "id": 3,
+    "nome": "Veggie No Go Horse",
+    "ingredientes": "Pão integral, Hambúrguer de lentilha, Queijo de castanha, Rúcula selvagem, Tomate grape, Pesto de manjericão"
+  },
+  {
+    "id": 4,
+    "nome": "Merge to Main",
+    "ingredientes": "Pão de malte, Hambúrguer de 220g, Queijo suíço, Cogumelos salteados, Cebola roxa, Aioli de ervas"
+  },
+  {
+    "id": 5,
+    "nome": "Refactor a la Fowler",
+    "ingredientes": "Pão brioche com gergelim, Hambúrguer de picanha 200g, Queijo gruyère, Presunto de parma, Rúcula, Geleia de pimenta"
+  }
+]
