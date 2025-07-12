@@ -23,7 +23,7 @@ app.get('/contato', (req, res) => {
 
 app.post('/contato', (req, res) => {
   contatoCadastrado = req.body;
-  res.status(200).redirect('/contato-recebido');
+  res.redirect('/contato-recebido');
 });
 
 app.get('/contato-recebido', (req, res) => {
