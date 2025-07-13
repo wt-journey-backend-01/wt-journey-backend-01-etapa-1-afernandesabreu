@@ -7,6 +7,7 @@ let contatoCadastrado = null;
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.get('/api/lanches', (req, res) => {
   const filePath = path.join(__dirname, 'public', 'data', 'lanches.json');
@@ -22,8 +23,13 @@ app.get('/contato', (req, res) => {
 });
 
 app.post('/contato', (req, res) => {
+  const { nome, email, assunto, mensagem } = req.body;
+  if (!nome?.trim() || !email?.trim() || !assunto?.trim() || !mensagem?.trim()) {
+    return res.status(400).sendFile(path.join(__dirname, 'public', '404.html'));
+  }
+
   contatoCadastrado = req.body;
-  res.redirect('/contato-recebido');
+  res.status(302).redirect('/contato-recebido');
 });
 
 app.get('/contato-recebido', (req, res) => {
